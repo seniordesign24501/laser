@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build",
+        "type": "shell",
+        "command": "C:/mingw/bin/g++.exe",
+        "args": [
+          "-g",
+          "${workspaceFolder}/src/main.cpp",
+          "-I${workspaceFolder}/include",
+          "-L${workspaceFolder}/lib",
+          "-lMEDAQLib",
+          "-o",
+          "${workspaceFolder}/bin/main.exe"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      }
+    ]
+  }
+  
