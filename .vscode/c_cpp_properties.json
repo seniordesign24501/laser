@@ -1,23 +1,19 @@
 {
-    "configurations": [
+  "configurations": [
       {
-        "name": "Win32",
-        "includePath": [
-          "${workspaceFolder}/include",
-          "C:/mingw/include",
-          "C:/mingw/lib/gcc/mingw32/6.3.0/include"
-        ],
-        "defines": [
-          "_DEBUG",
-          "UNICODE",
-          "_UNICODE"
-        ],
-        "compilerPath": "C:/MinGW/bin/g++.exe", 
-        "cStandard": "c11",
-        "cppStandard": "c++14",
-        "intelliSenseMode": "gcc-x64"
+          "name": "MinGW",
+          "includePath": [
+              "${workspaceFolder}/**",
+              "C:/MinGW/include",
+              "C:/MinGW/lib/gcc/mingw32/<version>/include", 
+              "C:/MinGW/lib/gcc/mingw32/<version>/include/c++"
+          ],
+          "defines": [],
+          "compilerPath": "C:/MinGW/bin/g++.exe",
+          "cStandard": "c11",
+          "cppStandard": "c++17",
+          "intelliSenseMode": "windows-gcc-x64"
       }
-    ],
-    "version": 4
-  }
-  
+  ],
+  "version": 4
+}
