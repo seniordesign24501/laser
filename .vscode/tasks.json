@@ -1,22 +1,22 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-      {
-          "label": "Build C++",
-          "type": "shell",
-          "command": "g++",
-          "args": [
-              "-g",
-              "${file}",
-              "-o",
-              "${fileDirname}/${fileBasenameNoExtension}.exe"
-          ],
-          "group": {
-              "kind": "build",
-              "isDefault": true
-          },
-          "problemMatcher": ["$gcc"],
-          "detail": "Generated task for C++ build using MinGW."
-      }
-  ]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++",
+            "type": "shell",
+            "command": "${workspaceFolder}\\tools\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build using local GCC."
+        }
+    ]
 }
