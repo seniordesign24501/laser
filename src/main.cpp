@@ -8,7 +8,7 @@ int main() {
         return -1;
     }
 
-    int errorCode = 0;
+    ERR_CODE errorCode = ERR_NOERROR;  // Use ERR_CODE type from MEDAQLib
 
     // Declare variables before any 'goto' statements
     int32_t rawData = 0;
