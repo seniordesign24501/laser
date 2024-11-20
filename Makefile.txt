@@ -1,0 +1,16 @@
+# Makefile for LaserProject
+
+CXX = g++
+CXXFLAGS = -g -Wall
+LDFLAGS = -lMEDAQLib
+
+SRC = src/main.cpp
+TARGET = laser_project
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC) $(LDFLAGS)
+
+clean:
+	rm -f $(TARGET)

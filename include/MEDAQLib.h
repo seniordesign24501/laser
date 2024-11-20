@@ -1,3 +1,5 @@
+//MEDAQLib.h
+
 #pragma once
 /* Copyright (C) Micro-Epsilon Messtechnik GmbH & Co. KG
  *
